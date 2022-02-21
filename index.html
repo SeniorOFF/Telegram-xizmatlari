@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Nakrutka</title>
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://github.com/t4t5/sweetalert.git">
+</head>
+<body>
+        <div class="boshqism">
+            <div class="btn"></div>
+           <div class="logotik">
+               <h1>Telegram <span>Uzbekistan</span> </h1>
+           </div>
+           <div class="link">
+               <ul>
+                   <li><a href="#">Bosh Sahifa</a></li>
+                   <li><a href="#Nakrutka">Nakrutka</a></li>
+                   <li><a href="#versiya">Versiya</a></li>
+                   <li><a href="#yuklash">Yuklab Olish</a></li>
+                   <li><a href="#">Murojat Uchun</a></li>
+               </ul>
+           </div>    
+        </div>
+
+        <div class="boshinfo">
+            <div class="binfo1">
+                <h1>Telegram Uzbekistan &</h1>
+                <h3>Ushbu Sayt Orqali Telegramning eng so'ngi versiyasi haqida <br> Ma'lumotlarni bilib olishingz mumkun bo'ladi. Undan Tashqari <br> Ushbu sayt orqali telegramdagi Kanal, grupaga nakrutka <br> xizmatidan foydalanishingiz mumkun!</h3>
+            </div>
+            <div class="boshbut">
+                <img src="img/Play Market.png" alt="" width="200" height="190">
+                <img src="img/App Store.png" alt="" width="180" height="50">
+            </div>
+            <p>Ilovani Hoziroq Yuklab Oling!</p>
+        </div>
+
+<header id="Nakrutka">
+    <div class="info" data-aos="zoom-in-down" data-aos-duration="1000">
+        <h1>Telegram Nakrutka<span> &</span></h1>
+        <p>Ushbu Xizmatdan 3 turda foydalalanishingiz mumkun!</p>
+    </div>
+    <div class="nakcard">
+        <div class="card1" data-aos="flip-left" data-aos-duration="2000">
+            <div class="logo">
+                <img src="tg.png" alt="Telegram" title="Telegram" width="120" height="120">
+                <h2>Telegram Nakrutka <i class="fa fa-user"></i> </h2>
+                <p>Tekin xizmatdan foydalaning!</p>
+            </div>
+            <hr>
+            <div class="jscard">
+                <h3>Sonini Kiriting!</h3>
+                <input type="number" id="mnum" placeholder="A'zolar">
+            </div>
+            <h4 id="demo">Eng kami 5, Eng Ko'pi 500</h4>
+            <div class="jscard">
+                <h3>Obunachi Turini Tanlang!</h3>
+                <select id="obun">
+                    <option>Jonli Obunchai</option>
+                    <option>Bot Obunachi</option>
+                </select>
+            </div>
+            <div class="purchase">
+                <span>0$</span>
+                <button onclick="member()" id="but1">Buyurtma Berish</button>
+                <button id="but2" style="display: none;"><div class="btn"></div> Iltimos Kuting</button>
+                <button id="but3" style="display: none;">Tayyor</button>
+            </div>
+        </div>
+
+        <div class="card1" data-aos="zoom-in-down" data-aos-duration="1000">
+            <div class="logo">
+                <img src="tg.png" alt="Telegram" title="Telegram" width="120" height="120">
+                <h2>Telegram Ko'rishlar <i class="fa fa-eye"></i> </h2>
+                <p>Tekin xizmatdan foydalaning!</p>
+            </div>
+            <hr>
+            <div class="jscard">
+                <h3>Sonini Kiriting!</h3>
+                <input type="number" id="tekshir" placeholder="Ko'rishlar">
+            </div>
+            <h4 id="demos">Eng kami 50, Eng Ko'pi 1K</h4>
+            <div class="jscard">
+                <h3>Ko'rishlar Turini Tanlang!</h3>
+                <select id="obuns">
+                    <option>O'rtacha Sekin</option>
+                    <option>Juda Tez</option>
+                </select>
+            </div>
+            <div class="purchase">
+                <span>0$</span>
+                <button onclick="members()" id="bur">Buyurtma Berish</button>
+                <button id="burs" style="display: none;"><div class="btn"></div> Iltimos Kuting</button>
+                <button id="burss" style="display: none;">Tayyor</button>
+            </div>
+        </div>
+
+        <div class="card1" data-aos="flip-right" data-aos-duration="2000">
+            <div class="logo">
+                <img src="tg.png" alt="Telegram" title="Telegram" width="120" height="120">
+                <h2>Bot Yaratish Xizmati <i class="fa fa-user-secret"></i> </h2>
+                <p>Pulli xizmatdan foydalaning!</p>
+            </div>
+            <hr>
+            <div class="jscard">
+                <h3>Sonini Kiriting!</h3>
+                <input type="number" id="buls" placeholder="Botlar">
+            </div>
+            <h4 id="demor">Eng kami 2, Eng Ko'pi 5 ta</h4>
+            <div class="jscard">
+                <h3>Bot Turini Tanlang!</h3>
+                <select id="obun">
+                    <option>Dasturli</option>
+                    <option>Boshqaruvli</option>
+                    <option>Muloqotli</option>
+                    <option>O'yin</option>
+                </select>
+            </div>
+            <div class="purchase">
+                <span>10$</span>
+                <button onclick="memberl()" id="bulr">Buyurtma Berish</button>
+                <button id="bulrr" style="display: none;"><div class="btn"></div> Iltimos Kuting</button>
+                <button id="bulrrr" style="display: none;">Tayyor</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="versiya" id="versiya">
+    <div class="verinfo" data-aos="zoom-in-down" data-aos-duration="1000">
+        <h1>Telegram Versiyalari</h1>
+        <p>Telegramdagi Versiyalar Yangilanishini Bilib Oling!</p>
+    </div>
+    <div class="verblock">
+        <div class="verimg" data-aos="zoom-in-right" data-aos-duration="1000">
+              <img src="img/versiya.jfif" alt="" width="500" hr
+              500>
+        </div>
+        <div class="verv" data-aos="fade-left" data-aos-duration="1000">
+            <h1>Telegram 8.0.3V<i class="fa fa-telegram"></i></h1>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Vero quae iusto nostrum porro eum ut. Aliquid, maiores! Voluptas<br> a quae, quidem eum sed iusto similique quaerat, sunt ab, officia vitae.</P>
+             <div class="tekshiruv">
+                 <div class="tekul">
+                     <ul>
+                         <li>Ovozli chatdagi Dizayn Yangilandi!</li><br>
+                         <li>Emojilarga yangicha ko'rinish berildi!</li><br>
+                         <li>Foydalanuvchi interfetsi o'zgartirildi!</li>
+                     </ul>
+                    </div> 
+                     <div class="tekul">
+                         <i class="fa fa-check"></i><br>
+                         <i class="fa fa-check"></i><br>
+                         <i class="fa fa-check"></i>
+                     </div>
+             </div>
+             <button><a href="https://t.me/senyor_muz">Batafsil <i class="fa fa-telegram"></i></a></button>
+        </div>
+    </div>
+
+
+    <div class="verblock">
+        <div class="verv" data-aos="fade-right" data-aos-duration="1000">
+            <h1>Telegram 8.0.3V<i class="fa fa-telegram"></i></h1>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Vero quae iusto nostrum porro eum ut. Aliquid, maiores! Voluptas<br> a quae, quidem eum sed iusto similique quaerat, sunt ab, officia vitae.</P>
+             <div class="tekshiruv" >
+                 <div class="tekul">
+                     <ul>
+                         <li>Ovozli chatdagi Dizayn Yangilandi!</li><br>
+                         <li>Emojilarga yangicha ko'rinish berildi!</li><br>
+                         <li>Foydalanuvchi interfetsi o'zgartirildi!</li>
+                     </ul>
+                    </div> 
+                     <div class="tekul">
+                         <i class="fa fa-check"></i><br>
+                         <i class="fa fa-check"></i><br>
+                         <i class="fa fa-check"></i>
+                     </div>
+             </div>
+             <button><a href="https://t.me/senyor_muz">Batafsil <i class="fa fa-telegram"></i></a></button>
+        </div>
+        <div class="verimg" data-aos="zoom-in-left" data-aos-duration="1000">
+              <img src="img/versiya1.jfif" alt="" width="500" height="300">
+        </div>
+    </div>
+
+
+    <div class="verblock">
+        <div class="verimg" data-aos="zoom-in-right" data-aos-duration="1000">
+              <img src="img/versiya3.jfif" alt="" width="500" hr
+              500>
+        </div>
+        <div class="verv" data-aos="fade-left" data-aos-duration="1000">
+            <h1>Telegram 8.0.3V<i class="fa fa-telegram"></i></h1>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br>Vero quae iusto nostrum porro eum ut. Aliquid, maiores! Voluptas<br> a quae, quidem eum sed iusto similique quaerat, sunt ab, officia vitae.</P>
+             <div class="tekshiruv">
+                 <div class="tekul">
+                     <ul>
+                         <li>Ovozli chatdagi Dizayn Yangilandi!</li><br>
+                         <li>Emojilarga yangicha ko'rinish berildi!</li><br>
+                         <li>Foydalanuvchi interfetsi o'zgartirildi!</li>
+                     </ul>
+                    </div> 
+                     <div class="tekul">
+                         <i class="fa fa-check"></i><br>
+                         <i class="fa fa-check"></i><br>
+                         <i class="fa fa-check"></i>
+                     </div>
+             </div>
+             <button><a href="https://t.me/senyor_muz">Batafsil <i class="fa fa-telegram"></i></a></button>
+        </div>
+    </div>
+</div>
+
+
+<div class="yuklash" id="yuklash">
+
+<!-- ---------------- 1 - DIV KO'RINISHI ----------   -->
+
+    <div class="MySlider fade">
+        <div class="slide">
+            <div class="stext" data-aos="fade-right" data-aos-duration="1000">
+            <h1>Telegram Android <i class="fa fa-telegram"></i></h1>
+            </div>
+            <div class="slbutton">
+                <button onclick="plusDivs(-1)">&#10094;</button>
+                <h2>1/4</h2>
+                <button onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="slideim">
+            <div class="slidfon" data-aos="fade-right" data-aos-duration="1000">
+                <img src="slide/1s.jpg" alt="" width="800" height="650">
+            </div>
+            <div class="slidown" data-aos="fade-left" data-aos-duration="1000">
+                <h5>Andorid Uchun Telegram!</h5>
+                <h1>Telegram Messenger</h1>
+                <p>Ushbu Telegramni Xar qanday turdagi<br> Androidingizga yuklab olishingiz Mumkun.<br> Mutlaqo Bepul Yuklang va do'stlar<br> Bilan Miriqb Suxbatlashing!</p>
+                <button><a href="https://telegram.org/android">Yuklash<i class="fa fa-mobile"></i></a></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------- 2 - DIV KO'RINISHI ----------   -->
+
+    <div class="MySlider fade">
+        <div class="slide">
+            <div class="stext"  data-aos="fade-right" data-aos-duration="1000">
+            <h1>Telegram iPhone<i class="fa fa-telegram"></i></h1>
+            </div>
+            <div class="slbutton" >
+                <button onclick="plusDivs(-1)">&#10094;</button>
+                <h2>2/4</h2>
+                <button onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="slideim">
+            <div class="slidfon"  data-aos="fade-right" data-aos-duration="1000">
+                <img src="slide/IPHONE.jpg" alt="" width="800" height="650">
+            </div>
+            <div class="slidown"  data-aos="fade-left" data-aos-duration="1000">
+                <h5>iPhone Uchun Telegram!</h5>
+                <h1>Telegram Messenger</h1>
+                <p>Ushbu Telegramni Xar qanday turdagi<br> iPhoneingizga yuklab olishingiz Mumkun.<br> Mutlaqo Bepul Yuklang va do'stlar<br> Bilan Miriqb Suxbatlashing!</p>
+                <button><a href="https://itunes.apple.com/app/telegram-messenger/id686449807">Yuklash <i class="fa fa-mobile"></i></a></button>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------------- 3 - DIV KO'RINISHI ----------   -->
+
+    <div class="MySlider fade">
+        <div class="slide">
+            <div class="stext">
+            <h1>Telegram Windows<i class="fa fa-telegram"></i></h1>
+            </div>
+            <div class="slbutton">
+                <button onclick="plusDivs(-1)">&#10094;</button>
+                <h2>3/4</h2>
+                <button onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="slideim">
+            <div class="slidfon">
+                <img src="slide/windows.png" alt="" width="800" height="650">
+            </div>
+            <div class="slidown">
+                <h5>Windows Uchun Telegram!</h5>
+                <h1>Telegram Messenger</h1>
+                <p>Ushbu Telegramni Xar qanday turdagi<br> Windowsga yuklab olishingiz Mumkun.<br> Mutlaqo Bepul Yuklang va do'stlar<br> Bilan Miriqb Suxbatlashing!</p>
+                <button><a href="https://desktop.telegram.org/">Yuklash<i class="fa fa-laptop"></i></a></button>
+            </div>
+        </div>
+    </div>
+
+<!-- ---------------- 4 - DIV KO'RINISHI ----------   -->
+
+    <div class="MySlider fade">
+        <div class="slide">
+            <div class="stext">
+            <h1>Telegram macOS <i class="fa fa-telegram"></i></h1>
+            </div>
+            <div class="slbutton">
+                <button onclick="plusDivs(-1)">&#10094;</button>
+                <h2>4/4</h2>
+                <button onclick="plusDivs(+1)">&#10095;</button>
+            </div>
+        </div>
+        <div class="slideim">
+            <div class="slidfon">
+                <img src="slide/MACOS.jpg" alt="" width="800" height="650">
+            </div>
+            <div class="slidown">
+                <h5>MAC Uchun Telegram!</h5>
+                <h1>Telegram Messenger</h1>
+                <p>Ushbu Telegramni Xar qanday turdagi<br> MACga yuklab olishingiz Mumkun.<br> Mutlaqo Bepul Yuklang va do'stlar<br> Bilan Miriqb Suxbatlashing!</p>
+                <button><a href="https://macos.telegram.org/">Yuklash<i class="fa fa-laptop"></i></a></button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- --------- Slide QISMI TUGADI --------  -->
+
+<div class="murojat">
+    <div class="muinfo" data-aos="fade-in" data-aos-duration="1500">
+        <h1>Foydali Telegram Botlari!</h1>
+        <p>O'zingizga Yoqqan botni tanlang va foydalaning.</p>
+    </div>
+
+    <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="itimg">
+                <img src="img/tg/father.jpg" alt="Father Bot" width="100" height="100">
+            </div>
+            <div class="itinfo">
+                <h1>Bot Father &</h1>
+                <p>Ushbu bot yordamida telegramdan<br> Mukammal bot yasashingiz<br>Mumkun bo'ladi!</p>
+                <button>Botga Kirish <i class="fa fa-chevron-right"></i> </button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itimg">
+                <img src="img/tg/game.jpg" alt="Game Bot" width="100" height="100">
+            </div>
+            <div class="itinfo">
+                <h1>Game Bot &</h1>
+                <p>Ushbu bot yordamida telegramda<br> turib do'stlar bilan o'yin<br>o'ynashingiz mumkun!</p>
+                <button>Botga Kirish <i class="fa fa-chevron-right"></i> </button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itimg">
+                <img src="img/tg/gozilla.jpg" alt="Gozilla Bot" width="100" height="100">
+            </div>
+            <div class="itinfo">
+                <h1>Gozilla bot &</h1>
+                <p>Ushbu bot yordamida telegramdan<br> Mukammal bot yasashingiz<br>Mumkun bo'ladi!</p>
+                <button>Botga Kirish <i class="fa fa-chevron-right"></i> </button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itimg">
+                <img src="img/tg/group.jpg" alt="Father Bot" width="100" height="100">
+            </div>
+            <div class="itinfo">
+                <h1>Group help bot &</h1>
+                <p>Ushbu bot yordamida telegramdan<br> Mukammal bot yasashingiz<br>Mumkun bo'ladi!</p>
+                <button>Botga Kirish <i class="fa fa-chevron-right"></i> </button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itimg">
+                <img src="img/tg/like.jpg" alt="Father Bot" width="100" height="100">
+            </div>
+            <div class="itinfo">
+                <h1>Like bot &</h1>
+                <p>Ushbu bot yordamida telegramdan<br> Mukammal bot yasashingiz<br>Mumkun bo'ladi!</p>
+                <button>Botga Kirish <i class="fa fa-chevron-right"></i> </button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itimg">
+                <img src="img/tg/mafia.jpg" alt="Father Bot" width="100" height="100">
+            </div>
+            <div class="itinfo">
+                <h1>Mafia bot &</h1>
+                <p>Ushbu bot yordamida telegramdan<br> Mukammal bot yasashingiz<br>Mumkun bo'ladi!</p>
+                <button>Botga Kirish <i class="fa fa-chevron-right"></i> </button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itimg">
+                <img src="img/tg/telapost.jpg" alt="Father Bot" width="100" height="100">
+            </div>
+            <div class="itinfo">
+                <h1>Telapost bot &</h1>
+                <p>Ushbu bot yordamida telegramdan<br> Mukammal bot yasashingiz<br>Mumkun bo'ladi!</p>
+                <button>Botga Kirish <i class="fa fa-chevron-right"></i> </button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itimg">
+                <img src="img/tg/textgram.jpg" alt="Father Bot" width="100" height="100">
+            </div>
+            <div class="itinfo">
+                <h1>Textgram bot &</h1>
+                <p>Ushbu bot yordamida telegramdan<br> Mukammal bot yasashingiz<br>Mumkun bo'ladi!</p>
+                <button>Botga Kirish <i class="fa fa-chevron-right"></i> </button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itimg">
+                <img src="img/tg/ttsave.jpg" alt="Father Bot" width="100" height="100">
+            </div>
+            <div class="itinfo">
+                <h1>TT save bot &</h1>
+                <p>Ushbu bot yordamida telegramdan<br> Mukammal bot yasashingiz<br>Mumkun bo'ladi!</p>
+                <button>Botga Kirish <i class="fa fa-chevron-right"></i> </button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itimg">
+                <img src="img/tg/vkm.jpg" alt="Father Bot" width="100" height="100">
+            </div>
+            <div class="itinfo">
+                <h1>VKM bot &</h1>
+                <p>Ushbu bot yordamida telegramdan<br> Mukammal bot yasashingiz<br>Mumkun bo'ladi!</p>
+                <button>Botga Kirish <i class="fa fa-chevron-right"></i> </button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itimg">
+                <img src="img/tg/livegram.jpg" alt="Father Bot" width="100" height="100">
+            </div>
+            <div class="itinfo">
+                <h1>Livegram Bot &</h1>
+                <p>Ushbu bot yordamida telegramdan<br> Mukammal bot yasashingiz<br>Mumkun bo'ladi!</p>
+                <button>Botga Kirish <i class="fa fa-chevron-right"></i> </button>
+            </div>
+        </div>
+        <div class="item">
+            <div class="itimg">
+                <img src="img/tg/music.jpg" alt="Father Bot" width="100" height="100">
+            </div>
+            <div class="itinfo">
+                <h1>Music Editor &</h1>
+                <p>Ushbu bot yordamida telegramdan<br> Mukammal bot yasashingiz<br>Mumkun bo'ladi!</p>
+                <button>Botga Kirish <i class="fa fa-chevron-right"></i> </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="endpage">
+    <div class="endfirst">
+        <div class="endinfo">
+            <h2>Telegram Turlari</h2>
+            <ul>
+                <li><a href="">Graph Messenger</a></li>
+                <li><a href="">Plus Messenger</a></li>
+                <li><a href="">Aka Messenger</a></li>
+                <li><a href="">Videogram Messenger</a></li>
+                <li><a href="">Telegram X</a></li>
+                <li><a href="">Tgraph Messenger</a></li>
+            </ul>
+        </div>
+        <div class="endinfo">
+            <h2>Foydali Manba</h2>
+            <ul>
+                <li><a href="">Telegram Bot</a></li>
+                <li><a href="">Telegram Kanal</a></li>
+                <li><a href="">Telegram Guruh</a></li>
+                <li><a href="">Pulli Xizmat</a></li>
+                <li><a href="">O'rganish</a></li>
+                <li><a href="">Batafsil</a></li>
+            </ul>
+        </div>
+        <div class="endinfo">
+            <h2>Yordam Markazi</h2>
+            <ul>
+                <li><a href="">Telegram Admin</a></li>
+                <li><a href="">Google email Admin</a></li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="endsecond">
+        <div class="etext">
+            <h1>Sayt orqali ro'yxatdan o'ting!</h1>
+            <p>Shunda har yangilanishda bonuslarga ega bo'lasiz!</p>
+        </div>
+        <div class="elogin">
+            <button>Ro'yxatdan O'tish</button>
+            <input type="submit" value="Hisobga Kirish">
+        </div>
+        <p>Accauntingiz bo'lmasa yangi yarata olishingiz<br> Mumkun bo'ladi!</p>
+    </div>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="owl.carousel.min.js"></script>
+<script src="script.js"></script>
+<script src="sweetalert-master/docs/assets/sweetalert/sweetalert.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+ 
+</body>
+</html>
